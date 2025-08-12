@@ -74,4 +74,4 @@ customer_order_count as (
 
 )
 
-select * from customer_order_count
+select *, current_timestamp() as updated_at from customer_order_count

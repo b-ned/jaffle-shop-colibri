@@ -6,17 +6,24 @@ source as (
 
 ),
 
+hardcoded_ref as (
+    select * from TEST_DB.PUBLIC.CUSTOMERS_HARDCODED
+),
+
 renamed as (
 
     select
 
         ----------  ids
-        id as customer_id,
+        s1.id as customer_id,
 
         ---------- text
-        name as customer_name
+        s1.name as customer_name,
+        s2.customer_name as hardcoded_name,
 
-    from source
+    from source s1
+    left join hardcoded_ref s2 
+        on s1.id = s2.customer_id
 
 )
 

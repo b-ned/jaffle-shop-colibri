@@ -36,7 +36,7 @@ jobs:
             # Configure Git for committing changes
             git config --global user.name "GitHub Actions"
             git config --global user.email "actions@github.com"
-            
+            git checkout -b gh-pages origin/gh-pages
             # Commit the changes and push to the gh-pages branch
             git add docs/index.html
             git commit -m "Deploy Colibri HTML"

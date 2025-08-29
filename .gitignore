@@ -3,7 +3,9 @@ venv
 .env
 env
 
-target/
+target/compiled
+target/run
+
 dbt_packages/
 logs/
 profiles.yml
@@ -16,3 +18,9 @@ profiles.yml
 __pycache__
 dist/colibri-manifest.json
 dist/index.html
+target/graph_summary.json
+target/graph.gpickle
+target/index.html
+target/partial_parse.msgpack
+target/run_results.json
+target/semantic_manifest.json

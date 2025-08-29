@@ -53,4 +53,4 @@ urllib3==2.2.1
     # via requests
 virtualenv==20.25.1
     # via pre-commit
-dbt-colibri==0.2.2
+dbt-colibri==0.2.3

@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - "*"
+permissions:
+  contents: write  # Allows GitHub Actions to push to the repository
 jobs:
   deploy_colibri:
     name: Deploy Colibri Example

@@ -286,15 +286,15 @@ wheels = [
 
 [[package]]
 name = "dbt-colibri"
-version = "0.2.0b4"
+version = "0.2.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
     { name = "sqlglot", extra = ["rs"] },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ea/25/b74555277fc8aca9bac6a23cc8e8f63a39956338288efcd2bcfd41280d3d/dbt_colibri-0.2.0b4.tar.gz", hash = "sha256:66feea476cd3f47c898e1e3b657666f8170be2a4675bb90605dd126c9ce9bea1", size = 435326, upload-time = "2025-08-04T21:22:05.59Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/00/69/902af0f89f47626d99f51dc5b1bbb76659b67d9f92b4169f5b07bbdfb881/dbt_colibri-0.2.3.tar.gz", hash = "sha256:3f303b4994251bae0088e2a26d5588d12dfa7009746e00d935146b5c8e461e0e", size = 444925, upload-time = "2025-08-19T05:45:04.62Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/16/d4/fc4c54ed1f512f1a865f59c3e6e9fc5c0c280ff7620ac37453bbc6e4b539/dbt_colibri-0.2.0b4-py3-none-any.whl", hash = "sha256:64909cc76a6f29836631afcf24310c752e4a58bbb902e2c9f485d5411d45bfce", size = 424529, upload-time = "2025-08-04T21:22:03.475Z" },
+    { url = "https://files.pythonhosted.org/packages/4a/84/363d184ffad207ab8573609064536395fcbfbf5d369c772a9d03ffbc6ac7/dbt_colibri-0.2.3-py3-none-any.whl", hash = "sha256:16f1bc2c444e5aaba0b410c1d0e56b0c78325ff6f881016690eed2b65649d090", size = 438733, upload-time = "2025-08-19T05:45:03.462Z" },
 ]
 
 [[package]]
@@ -490,7 +490,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "dbt-colibri", specifier = ">=0.2.0b4" },
+    { name = "dbt-colibri", specifier = "==0.2.3" },
     { name = "dbt-snowflake", specifier = "==1.8" },
 ]
 

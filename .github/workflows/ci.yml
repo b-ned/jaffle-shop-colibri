@@ -31,7 +31,7 @@ jobs:
             echo "Deploying HTML to GitHub Pages..."
             
             # If using GitHub Pages, copy the HTML file to the docs folder or desired directory
-            cp dist/index_inlined.html ./docs/index.html
+            cp dist/index.html ./docs/index.html
 
             # Configure Git for committing changes
             git config --global user.name "GitHub Actions"

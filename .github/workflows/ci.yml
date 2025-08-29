@@ -29,9 +29,9 @@ jobs:
           # Ensure that the index.html is generated in the output dir
           if [ -f dist/index.html ]; then
             echo "Deploying HTML to GitHub Pages..."
-            
+            mkdir -p ./docs
             # If using GitHub Pages, copy the HTML file to the docs folder or desired directory
-            cp dist/index_inlined.html ./docs/index.html
+            cp dist/index.html ./docs/index.html
 
             # Configure Git for committing changes
             git config --global user.name "GitHub Actions"

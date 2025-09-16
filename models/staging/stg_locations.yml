@@ -1,5 +1,5 @@
 models:
-  - name: stg_locations
+  - name: STG_LOCATIONS
     description: List of open locations with basic cleaning and transformation applied, one row per location.
     columns:
       - name: location_id
@@ -11,7 +11,7 @@ models:
 unit_tests:
   - name: test_does_location_opened_at_trunc_to_date
     description: "Check that opened_at timestamp is properly truncated to a date."
-    model: stg_locations
+    model: STG_LOCATIONS
     given:
       - input: source('ecom', 'raw_stores')
         rows:

@@ -2,12 +2,12 @@ with
 
 source as (
 
-    select * from {{ source('ecom', 'raw_customers') }}
+    select * from {{ source('ecom', 'RAW_CUSTOMERS') }}
 
 ),
 
 hardcoded_ref as (
-    select * from TEST_DB.PUBLIC.CUSTOMERS_HARDCODED
+    select * from public.customers_hardcoded
 ),
 
 renamed as (
@@ -19,11 +19,11 @@ renamed as (
 
         ---------- text
         s1.name as customer_name,
-        s2.customer_name as hardcoded_name,
+        s2.name as hardcoded_name
 
     from source s1
     left join hardcoded_ref s2 
-        on s1.id = s2.customer_id
+        on s1.id = s2.id
 
 )
 

@@ -25,8 +25,4 @@ target/partial_parse.msgpack
 target/run_results.json
 target/semantic_manifest.json
 jaffle_shop.duckdb
-target/catalog.json
-target/manifest.json
-target/colibri-manifest.json
-target/manifest.json
-target/catalog.json
+target/

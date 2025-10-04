@@ -1,0 +1,24 @@
+models:
+  - name: versioned_model
+    description: A model that is versioned to demonstrate versioned models.
+    latest_version: 2
+    
+    # declare the versions, and fully specify them
+    versions:
+      - v: 2
+        config:
+          materialized: table
+        columns:
+          - name: customer_id
+            description: This is the primary key
+      
+      - v: 1
+        config:
+          materialized: table
+
+        columns:
+          - name: customer_id
+            description: This is the primary key
+
+          - name: customerName
+            description: Where this customer lives

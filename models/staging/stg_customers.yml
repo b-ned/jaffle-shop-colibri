@@ -1,11 +1,23 @@
 models:
   - name: STG_CUSTOMERS
-    description: Customer data with basic cleaning and transformation applied, one row per customer.
+    description: |
+      ## Customer data
+      This table contains **one row per customer**.  
+
+      - Data cleaned and standardized  
+      - Basic transformations applied  
+      - Ready for downstream joins  
+
+      _Note: sourced from `RAW.CUSTOMERS`_
     config:
       alias: stg_customer_alias
     columns:
       - name: customer_id
-        description: The unique key for each customer.
+        description: |
+          Primary key for the **table**.  
+
+          - Always unique  
+          - Never null  
         data_tests:
           - not_null
           - unique

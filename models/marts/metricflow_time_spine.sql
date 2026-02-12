@@ -4,7 +4,7 @@ with
 days as (
 
     --for BQ adapters use "DATE('01/01/2000','mm/dd/yyyy')"
-    {{ dbt_date.get_base_dates(n_dateparts=365*10, datepart="day") }}
+    select date '2000-01-01' + level - 1 as date_day from dual connect by level <= 3650
 
 ),
 

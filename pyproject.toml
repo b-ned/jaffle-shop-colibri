@@ -12,4 +12,6 @@ dependencies = [
     "dbt-duckdb>=1.9.4",
     "dbt-redshift>=1.9.5",
     "dbt-snowflake==1.8",
+    "dbt-oracle>=1.8.0",
+    "oracledb>=2.0.0",
 ]

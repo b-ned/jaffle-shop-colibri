@@ -7,7 +7,7 @@ source as (
 ),
 
 hardcoded_ref as (
-    select * from public.customers_hardcoded
+    select * from {{ target.schema }}.customers_hardcoded
 ),
 
 renamed as (
